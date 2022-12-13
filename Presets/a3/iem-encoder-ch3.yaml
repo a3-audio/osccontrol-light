@@ -1,0 +1,24 @@
+network:
+  host: 127.0.0.1
+  port: 9030
+
+controls:
+  - name: azimuth
+    type: float
+    default: 0
+    range: [-180, 180]
+    message: /StereoEncoder/azimuth
+
+  - name: elevation
+    type: float
+    default: 0
+    range: [-180, 180]
+    message: /StereoEncoder/elevation
+
+  - name: width
+    type: float
+    default: 30
+    range: [0.1, 180]
+    message: /StereoEncoder/width
+
+
